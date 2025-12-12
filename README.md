@@ -80,6 +80,13 @@ Any valid plan can be parsed into a [tree](<https://en.wikipedia.org/wiki/Tree_(
 It is possible to create cyclic dependencies using the dependency notation above.
 A plan with cyclic dependencies is not a valid plan.
 
+## Extensions
+
+The core syntax described above is as simple as possible by design. But it is useful to extend it, like add optional dates and time intervals to tasks.
+See the Gantt example below.
+
+Any "extended" syntax must still be parseable as a "vanilla" markdown plan, as specified by this document.
+
 ## Installing
 
 ```sh
