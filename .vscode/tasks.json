@@ -4,15 +4,13 @@
         {
             "label": "Update & Plot Project Chart",
             "type": "shell",
-            // دستور به حالت اولیه با && برگشت
-            "command": "git add . && git commit -m \"${input:commitMessage}\" && mdplan plot my-project.md",
+            "command": "call C:\\Users\\Soroush\\miniconda3\\Scripts\\activate.bat mdplan-env && git add . && git commit -m \"${input:commitMessage}\" && mdplan plot my-project.md",
             "problemMatcher": [],
             "presentation": {
                 "reveal": "always",
                 "panel": "new",
                 "clear": true
             },
-            // این بخش به VS Code می گوید که از Command Prompt استفاده کند
             "options": {
                 "shell": {
                     "executable": "cmd.exe",
